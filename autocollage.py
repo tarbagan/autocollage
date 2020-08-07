@@ -5,7 +5,6 @@
 Автор Иргит В.А.
 url: https://github.com/tarbagan/autocollage
 """
-import os
 from PIL import Image, ImageEnhance
 import datetime
 import os
