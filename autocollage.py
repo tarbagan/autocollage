@@ -3,8 +3,8 @@ from PIL import Image, ImageEnhance
 import datetime
 import os
 
-folder = r'\test'
-folder_out = r'\test\one'
+folder = '\in_photo'
+folder_out = '\out_photo'
 
 
 width = 4000
