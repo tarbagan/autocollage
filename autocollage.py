@@ -4,7 +4,7 @@ import datetime
 import os
 
 folder = r'\test'
-folder_out = r'\test\one'
+folder_out = r'\out'
 
 
 width = 4000
