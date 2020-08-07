@@ -1,14 +1,22 @@
+# -*- coding: utf8 -*-
+"""
+Автоколлаж фотографий
+Версия: 0.1
+Автор Иргит В.А.
+url: https://github.com/tarbagan/autocollage
+"""
 import os
 from PIL import Image, ImageEnhance
 import datetime
 import os
 
-folder = '\in_photo'
-folder_out = '\out_photo'
+folder = r'd:\Python_Progect\autocollage\in_photo'
+folder_out = r'd:\Python_Progect\autocollage\out_photo'
 
 
-width = 4000
-init_height = 4000
+width = 3000
+init_height = 1000
+dpi = 300
 margin_size = 5
 margin_color = (255, 255, 255)
 in_brightness = 1.0
@@ -99,7 +107,7 @@ def make_collage(images, width, init_height):
     output = f'collage_{file_name}.jpg'
 
     output_itog = f'{folder_out}/{output}'
-    collage_image.save(output_itog, dpi=(300, 300))
+    collage_image.save(output_itog, dpi=(dpi, dpi))
     return output_itog
 
 
